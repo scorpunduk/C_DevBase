@@ -6,7 +6,7 @@ $(PROGRAM) : parseToUTF8.o unicodeparser.o
 		gcc -o $(PROGRAM) $(FLAGS) parseToUTF8.o unicodeparser.o
 
 parseToUTF8.o : parseToUTF8.c unicodeparser.h
-		gcc -c $(FLAGS) unicodeparser.c
+		gcc -c $(FLAGS) parseToUTF8.c
 
 unicodeparser.o : unicodeparser.c unicodeparser.h
 		gcc -c $(FLAGS) unicodeparser.c
